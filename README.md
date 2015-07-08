@@ -1,14 +1,14 @@
 # Description
 
-An atom-tool-bar plugin that adds an 'almighty toolbar' with many commonly used actions
+An atom-tool-bar plugin that adds many commonly used actions in the tool-bar.
 
 # Installation
 
-First you have to install the __tool-bar__ package which is required:
+First you have to install the `tool-bar` package which is required:
 
 > apm install tool-bar
 
-Then you install the __tool-bar-almighty__ package:
+Then you install the `tool-bar-almighty` package:
 
 > apm install tool-bar-almighty
 
@@ -18,4 +18,4 @@ Then you install the __tool-bar-almighty__ package:
 
 # License
 
-The MIT License (check LICENSE.md)
+The MIT License
