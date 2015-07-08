@@ -1,7 +1,7 @@
 {
   "name": "tool-bar-almighty",
   "main": "./lib/tool-bar-almighty",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "An atom-tool-bar plugin that adds an 'almighty toolbar' with many commonly used actions",
   "repository": "https://github.com/varemenos/atom-toolbar-almighty",
   "license": "MIT",
