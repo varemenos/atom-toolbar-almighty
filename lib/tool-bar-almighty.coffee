@@ -1,66 +1,96 @@
 module.exports =
-  activate: (state) ->
-
   deactivate: ->
     @toolBar?.removeItems()
 
-  serialize: ->
-
   consumeToolBar: (toolBar) ->
-    @toolBar = toolBar 'main-tool-bar'
+    @toolBar = toolBar 'tool-bar-almighty'
 
     @toolBar.addButton
-      icon: 'document'
-      callback: 'application:new-file'
-      tooltip: 'New File'
-      iconset: 'ion'
-    @toolBar.addButton
-      icon: 'folder'
-      callback: 'application:open-file'
-      tooltip: 'Open...'
-      iconset: 'ion'
-    @toolBar.addButton
-      icon: 'archive'
-      callback: 'core:save'
-      tooltip: 'Save'
-      iconset: 'ion'
-
-    @toolBar.addSpacer()
-
-    @toolBar.addButton
-      icon: 'search'
-      callback: 'find-and-replace:show'
-      tooltip: 'Find in Buffer'
-      iconset: 'ion'
-    @toolBar.addButton
-      icon: 'shuffle'
-      callback: 'find-and-replace:show-replace'
-      tooltip: 'Replace in Buffer'
-      iconset: 'ion'
-
-    @toolBar.addSpacer()
-
-    @toolBar.addButton
-      icon: 'navicon-round'
-      callback: 'command-palette:toggle'
-      tooltip: 'Toggle Command Palette'
-      iconset: 'ion'
-    @toolBar.addButton
-      icon: 'gear-a'
-      callback: 'settings-view:open'
-      tooltip: 'Open Settings View'
-      iconset: 'ion'
-
-    if atom.inDevMode()
-      @toolBar.addSpacer()
-
-      @toolBar.addButton
-        icon: 'refresh'
-        callback: 'window:reload'
-        tooltip: 'Reload Window'
+        icon: 'document-text'
+        callback: 'application:open-file'
+        tooltip: 'Open File'
         iconset: 'ion'
-      @toolBar.addButton
-        icon: 'terminal'
-        callback: ->
-          require('remote').getCurrentWindow().toggleDevTools()
-        tooltip: 'Toggle Developer Tools'
+
+    @toolBar.addButton
+        'icon': 'folder'
+        'callback': 'application:open-folder'
+        'tooltip': 'Open Folder'
+        'iconset': 'ion'
+
+    @toolBar.addButton
+        'icon': 'archive'
+        'callback': 'core:save'
+        'tooltip': 'Save File'
+        'iconset': 'ion'
+
+    if atom.packages.loadedPackages['git-projects']
+        @toolBar.addButton
+            'icon': 'octoface'
+            'tooltip': 'Git Projects'
+            'callback': 'git-projects:toggle'
+
+    @toolBar.addSpacer()
+
+    @toolBar.addButton
+        'icon': 'columns'
+        'iconset': 'fa'
+        'tooltip': 'Split screen - Horizontally'
+        'callback': 'pane:split-right'
+
+    @toolBar.addButton
+        'icon': 'columns fa-rotate-270'
+        'iconset': 'fa'
+        'tooltip': 'Split screen - Vertically'
+        'callback': 'pane:split-down'
+
+    @toolBar.addSpacer()
+
+    if atom.packages.loadedPackages['merge-conflicts']
+        @toolBar.addButton
+            'icon': 'code-fork'
+            'iconset': 'fa'
+            'tooltip': 'Merge Conflicts'
+            'callback': 'merge-conflicts:detect'
+
+    @toolBar.addButton
+        'iconset': 'fa'
+        'icon': 'arrows-alt'
+        'tooltip': 'Toggle Fullscreen'
+        'callback': 'window:toggle-full-screen'
+
+    @toolBar.addButton
+        'icon': 'sitemap'
+        'callback': 'tree-view:toggle'
+        'tooltip': 'Toggle Sidebar'
+        'iconset': 'fa'
+
+    @toolBar.addButton
+        'icon': 'map'
+        'callback': 'minimap:toggle'
+        'tooltip': 'Toggle Minimap'
+        'iconset': 'ion'
+
+    @toolBar.addSpacer()
+
+    @toolBar.addButton
+        'icon': 'refresh'
+        'callback': 'window:reload'
+        'tooltip': 'Reload Window'
+        'iconset': 'ion'
+
+    if atom.packages.loadedPackages['term2']
+        @toolBar.addButton
+            'icon': 'terminal'
+            'callback': 'term2:open-split-down'
+            'tooltip': 'Term2 Split Down'
+
+    @toolBar.addButton
+        'icon': 'bug'
+        'callback': 'window:toggle-dev-tools'
+        'tooltip': 'Toggle Developer Tools'
+
+    @toolBar.addButton
+        'icon': 'gear-a'
+        'callback': 'settings-view:open'
+        'tooltip': 'Open Settings View'
+        'iconset': 'ion'
