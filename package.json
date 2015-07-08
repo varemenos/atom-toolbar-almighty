@@ -1,0 +1,26 @@
+{
+  "name": "tool-bar-almighty",
+  "main": "./lib/tool-bar-almighty",
+  "version": "0.0.8",
+  "description": "",
+  "repository": "https://github.com/varemenos/atom-toolbar-almighty",
+  "license": "MIT",
+  "engines": {
+    "atom": ">0.50.0"
+  },
+  "keywords": [
+    "toolbar",
+    "tool-bar"
+  ],
+  "dependencies": {},
+  "packageDependencies": {
+    "tool-bar": "0.1.1"
+  },
+  "consumedServices": {
+    "tool-bar": {
+      "versions": {
+        "^0.1.0": "consumeToolBar"
+      }
+    }
+  }
+}
