@@ -6,7 +6,7 @@ An atom-tool-bar plugin that adds many commonly used actions in the tool-bar.
 
 ![screenshot](https://cdn.rawgit.com/varemenos/atom-toolbar-almighty/master/screenshot.png)
 
-[From top to bottom]
+[From left to right]
 
 * open file
 * open folder
