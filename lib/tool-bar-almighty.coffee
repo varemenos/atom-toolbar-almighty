@@ -64,11 +64,12 @@ module.exports =
         'tooltip': 'Toggle Sidebar'
         'iconset': 'fa'
 
-    @toolBar.addButton
-        'icon': 'map'
-        'callback': 'minimap:toggle'
-        'tooltip': 'Toggle Minimap'
-        'iconset': 'ion'
+    if atom.packages.loadedPackages['minimap']
+        @toolBar.addButton
+            'icon': 'map'
+            'callback': 'minimap:toggle'
+            'tooltip': 'Toggle Minimap'
+            'iconset': 'ion'
 
     @toolBar.addSpacer()
 
@@ -83,6 +84,12 @@ module.exports =
             'icon': 'terminal'
             'callback': 'term2:open-split-down'
             'tooltip': 'Term2 Split Down'
+
+    if atom.packages.loadedPackages['term3']
+        @toolBar.addButton
+            'icon': 'terminal'
+            'callback': 'term3:open-split-down'
+            'tooltip': 'Term3 Split Down'
 
     @toolBar.addButton
         'icon': 'bug'
