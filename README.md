@@ -19,10 +19,10 @@ An atom-tool-bar plugin that adds many commonly used actions in the tool-bar.
 * git merge conflicts (requires merge-conflicts package)
 * toggle fullscreen
 * toggle tree-view
-* toggle minimap
+* toggle minimap (requires minimap package)
 * -
 * reload window
-* opens a terminal (split bottom)  (requires term2 package)
+* opens a terminal (split bottom)  (requires term2 or term3 package)
 * toggle devtools
 * settings
 
@@ -41,6 +41,10 @@ Then you install the `tool-bar-almighty` package:
 ```bash
 apm install tool-bar-almighty
 ```
+
+## TODO
+
+Add package settings to toggle (and maybe reorder) toolbar items
 
 ## License
 
