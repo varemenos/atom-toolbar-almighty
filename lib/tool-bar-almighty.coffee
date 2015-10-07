@@ -25,7 +25,8 @@ module.exports =
 
     if atom.packages.loadedPackages['git-projects']
       @toolBar.addButton
-        'icon': 'octoface'
+        'iconset': 'fa'
+        'icon': 'git'
         'tooltip': 'Git Projects'
         'callback': 'git-projects:toggle'
 
