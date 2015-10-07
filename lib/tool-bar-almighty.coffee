@@ -23,6 +23,13 @@ module.exports =
       'tooltip': 'Save File'
       'iconset': 'ion'
 
+    if atom.packages.loadedPackages['git-control']
+      @toolBar.addButton
+        'iconset': 'fa'
+        'icon': 'bullseye'
+        'tooltip': 'Git Control'
+        'callback': 'git-control:toggle'
+
     if atom.packages.loadedPackages['git-projects']
       @toolBar.addButton
         'iconset': 'fa'
