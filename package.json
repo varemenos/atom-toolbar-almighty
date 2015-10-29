@@ -1,7 +1,7 @@
 {
   "name": "tool-bar-shortcuts",
   "main": "./lib/tool-bar-shortcuts",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An atom-tool-bar plugin that adds an 'shortcuts toolbar' with many commonly used actions",
   "repository": "https://github.com/JostCrow/atom-toolbar-shortcuts",
   "license": "MIT",
