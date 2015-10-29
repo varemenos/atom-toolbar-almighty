@@ -1,10 +1,10 @@
-# Toolbar Almighty - a tool-bar plugin
+# Toolbar Shortcuts - a tool-bar plugin
 
 ## Description
 
 An atom-tool-bar plugin that adds many commonly used actions in the tool-bar.
 
-![screenshot](https://cdn.rawgit.com/varemenos/atom-toolbar-almighty/master/screenshot.png)
+![screenshot](https://raw.githubusercontent.com/JostCrow/atom-toolbar-shortcuts/master/screenshot.png)
 
 [From left to right]
 
