@@ -8,25 +8,31 @@ An atom-tool-bar plugin that adds many commonly used actions in the tool-bar.
 
 [From left to right]
 
-* open file
-* open folder
-* save file
-* open git projects (requires git-projects package)
+* Open file
+* Open folder
 * -
-* split left
-* split right
+* Open git projects (requires git-projects package)
+* Open Ungit (requires atom-ungit package)
+* Open Terminal (requires terminal-plus package)
 * -
-* git merge conflicts (requires merge-conflicts package)
-* toggle fullscreen
-* toggle tree-view
-* toggle minimap (requires minimap package)
+* Split left
+* Split bottom
 * -
-* reload window
-* opens a terminal (split bottom)  (requires term2 or term3 package)
-* toggle devtools
-* settings
+* Comment line
+* -
+* Toggle Fullscreen
+* Toggle Tree-view
+* Toggle Minimap (requires minimap package)
+* -
+* Settings
+* -
+* Reload window
 
 _The toolbar buttons that require other packages will only appear if you have those packages installed_
+
+## Sugestions
+
+If you have sugestions for this package. Create an issue.
 
 ## Installation
 
@@ -36,10 +42,10 @@ First you have to install the `tool-bar` package which is required:
 apm install tool-bar
 ```
 
-Then you install the `tool-bar-almighty` package:
+Then you install the `tool-bar-shortcuts` package:
 
 ```bash
-apm install tool-bar-almighty
+apm install tool-bar-shortcuts
 ```
 
 ## TODO

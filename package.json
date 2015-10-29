@@ -1,9 +1,9 @@
 {
-  "name": "tool-bar-almighty",
-  "main": "./lib/tool-bar-almighty",
-  "version": "0.1.3",
-  "description": "An atom-tool-bar plugin that adds an 'almighty toolbar' with many commonly used actions",
-  "repository": "https://github.com/varemenos/atom-toolbar-almighty",
+  "name": "tool-bar-shortcuts",
+  "main": "./lib/tool-bar-shortcuts",
+  "version": "0.1.0",
+  "description": "An atom-tool-bar plugin that adds an 'shortcuts toolbar' with many commonly used actions",
+  "repository": "https://github.com/JostCrow/atom-toolbar-shortcuts",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
