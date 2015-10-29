@@ -82,6 +82,26 @@ module.exports =
     @toolBar.addSpacer()
 
     @toolBar.addButton
+      'icon': 'indent'
+      'callback': 'editor:auto-indent'
+      'tooltip': 'Auto indent (selection)'
+      'iconset': 'fa'
+
+    @toolBar.addButton
+      'icon': 'level-up'
+      'callback': 'editor:fold-all'
+      'tooltip': 'Fold all'
+      'iconset': 'fa'
+
+    @toolBar.addButton
+      'icon': 'level-down'
+      'callback': 'editor:unfold-all'
+      'tooltip': 'Unfold all'
+      'iconset': 'fa'
+
+    @toolBar.addSpacer()
+
+    @toolBar.addButton
       'icon': 'refresh'
       'callback': 'window:reload'
       'tooltip': 'Reload Window'
