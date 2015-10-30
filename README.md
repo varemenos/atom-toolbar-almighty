@@ -11,6 +11,7 @@ An atom-tool-bar plugin that adds many commonly used actions in the tool-bar.
 * open file
 * open folder
 * save file
+* open git-control (missing from the screenshot) (requires git-control package)
 * open git projects (requires git-projects package)
 * -
 * split left
@@ -20,6 +21,10 @@ An atom-tool-bar plugin that adds many commonly used actions in the tool-bar.
 * toggle fullscreen
 * toggle tree-view
 * toggle minimap (requires minimap package)
+* -
+* auto indent
+* fold all
+* unfold all
 * -
 * reload window
 * opens a terminal (split bottom)  (requires term2 or term3 package)
