@@ -4,7 +4,7 @@
 
 An atom-tool-bar plugin that adds many commonly used actions in the tool-bar.
 
-![screenshot](https://cdn.rawgit.com/varemenos/atom-toolbar-almighty/master/screenshot.png)
+![screenshot](https://rawgit.com/varemenos/atom-toolbar-almighty/master/screenshot.png)
 
 [From left to right]
 
