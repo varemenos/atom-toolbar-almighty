@@ -101,6 +101,20 @@ module.exports =
 
     @toolBar.addSpacer()
 
+    if atom.packages.loadedPackages['project-manager']
+      @toolBar.addButton
+        'icon': 'file-submodule'
+        'callback': 'project-manager:list-projects'
+        'tooltip': 'List projects'
+
+    if atom.packages.loadedPackages['project-manager']
+      @toolBar.addButton
+        'icon': 'file-symlink-directory'
+        'callback': 'project-manager:save-project'
+        'tooltip': 'Save project'
+
+    @toolBar.addSpacer()
+
     @toolBar.addButton
       'icon': 'refresh'
       'callback': 'window:reload'
