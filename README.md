@@ -13,9 +13,7 @@ Available toolbar buttons:
 * __save file__
 * __open git-control__ (missing from the screenshot) (requires `git-control` package)
 * __open git projects__ (requires `git-projects` package)
-* __open projects__ (requires `project-manager` package)
 * __list projects__ (requires `project-manager` package)
-* __edit projects__ (requires `project-manager` package)
 * -
 * __split left__
 * __split right__
