@@ -11,26 +11,26 @@ Available toolbar buttons:
 * __open file__
 * __open folder__
 * __save file__
-* __open git-control__ (missing from the screenshot) (requires git-control package)
-* __open git projects__ (requires git-projects package)
-* __open projects__ (requires project-manager package)
-* __list projects__ (requires project-manager package)
-* __edit projects__ (requires project-manager package)
+* __open git-control__ (missing from the screenshot) (requires `git-control` package)
+* __open git projects__ (requires `git-projects` package)
+* __open projects__ (requires `project-manager` package)
+* __list projects__ (requires `project-manager` package)
+* __edit projects__ (requires `project-manager` package)
 * -
 * __split left__
 * __split right__
 * -
-* __git merge conflicts__ (requires merge-conflicts package)
+* __git merge conflicts__ (requires `merge-conflicts` package)
 * __toggle fullscreen__
 * __toggle tree-view__
-* __toggle minimap__ (requires minimap package)
+* __toggle minimap__ (requires `minimap` package)
 * -
 * __auto indent__
 * __fold all__
 * __unfold all__
 * -
 * __reload window__
-* __opens a terminal (split bottom)__  (requires term2 or term3 package)
+* __opens a terminal (split bottom)__  (requires `term2` or `term3` package)
 * __toggle devtools__
 * __settings__
 
