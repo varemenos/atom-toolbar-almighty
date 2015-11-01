@@ -6,32 +6,35 @@ An atom-tool-bar plugin that adds many commonly used actions in the tool-bar.
 
 ![screenshot](https://rawgit.com/varemenos/atom-toolbar-almighty/master/screenshot.png)
 
-[From left to right]
+Available toolbar buttons:
 
-* open file
-* open folder
-* save file
-* open git-control (missing from the screenshot) (requires git-control package)
-* open git projects (requires git-projects package)
+* __open file__
+* __open folder__
+* __save file__
+* __open git-control__ (missing from the screenshot) (requires git-control package)
+* __open git projects__ (requires git-projects package)
+* __open projects__ (requires project-manager package)
+* __list projects__ (requires project-manager package)
+* __edit projects__ (requires project-manager package)
 * -
-* split left
-* split right
+* __split left__
+* __split right__
 * -
-* git merge conflicts (requires merge-conflicts package)
-* toggle fullscreen
-* toggle tree-view
-* toggle minimap (requires minimap package)
+* __git merge conflicts__ (requires merge-conflicts package)
+* __toggle fullscreen__
+* __toggle tree-view__
+* __toggle minimap__ (requires minimap package)
 * -
-* auto indent
-* fold all
-* unfold all
+* __auto indent__
+* __fold all__
+* __unfold all__
 * -
-* reload window
-* opens a terminal (split bottom)  (requires term2 or term3 package)
-* toggle devtools
-* settings
+* __reload window__
+* __opens a terminal (split bottom)__  (requires term2 or term3 package)
+* __toggle devtools__
+* __settings__
 
-_The toolbar buttons that require other packages will only appear if you have those packages installed_
+__Note__: The toolbar buttons that require other packages will only appear if you have those packages installed
 
 ## Installation
 
