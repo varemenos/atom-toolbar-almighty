@@ -36,6 +36,19 @@ module.exports =
         'icon': 'git'
         'tooltip': 'Git Projects'
         'callback': 'git-projects:toggle'
+    if atom.packages.loadedPackages['project-manager']
+      @toolBar.addButton
+        'icon': 'file-submodule'
+        'tooltip': 'List projects'
+        'callback': 'project-manager:list-projects'
+      @toolBar.addButton
+        'icon': 'file-symlink-directory'
+        'tooltip': 'Save project'
+        'callback': 'project-manager:save-project'
+      @toolBar.addButton
+        'icon': 'pencil'
+        'tooltip': 'Edit projects'
+        'callback': 'project-manager:edit-projects'
 
     @toolBar.addSpacer()
 
