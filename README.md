@@ -2,7 +2,7 @@
 
 ## Description
 
-An atom-tool-bar plugin that adds many commonly used actions in the tool-bar.
+An tool-bar plugin that adds many commonly used actions in the tool-bar.
 
 ![screenshot](https://rawgit.com/varemenos/atom-toolbar-almighty/master/screenshot.png)
 
