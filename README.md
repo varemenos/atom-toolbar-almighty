@@ -48,9 +48,38 @@ Then you install the `tool-bar-almighty` package:
 apm install tool-bar-almighty
 ```
 
-## TODO
+## Custom entries
 
-Add package settings to toggle (and maybe reorder) toolbar items
+I've added basic support for custom entries in v0.4. To utilize this feature you have to go to the settings of tool-bar-almighty and enter a path relative to your `.atom` directory that contains the entries you want to add. They will be added below the default entries.
+
+The file must be a javascript module that exports an Array of entries.
+
+### Format
+
+The format is the same as [tool-bar's](https://github.com/suda/tool-bar#example) with 2 extra properties. The first one is `type` which indicates whether the entry is a `button` or a `spacer` while the second one is `dependency` which indicates whether a button's package is not installed by default in Atom and should only be displayed if it's package is installed.
+The `lib/entries.coffee` is another example on how to format your entries.
+
+### Example
+
+```js
+// ~/.atom/my-custom-entries.js
+module.exports = [
+  {
+    type: 'button'
+    tooltip: 'Open File'
+    callback: 'application:open-file'
+    icon: 'document-text'
+    iconset: 'ion'
+  },
+  {
+    type: 'button'
+    tooltip: 'Open Folder'
+    callback: 'application:open-folder'
+    icon: 'folder'
+    iconset: 'ion'
+  }
+]
+```
 
 ## License
 

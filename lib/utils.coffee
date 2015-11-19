@@ -1,5 +1,17 @@
 utils = {};
 
+path = require 'path';
+
+utils.getCustomEntries = (filepath) ->
+  if filepath
+    try
+      content = require(path.join(atom.getConfigDirPath(), filepath), 'utf-8')
+    catch error
+      return false
+    return content
+  else
+    return false
+
 utils.addButton = (toolBar, entry) ->
   toolBar.addButton
     tooltip: entry.tooltip
