@@ -61,8 +61,11 @@ The `lib/entries.coffee` is another example on how to format your entries.
 
 ### Example
 
+* The file's location `~/.atom/my-custom-entries.js`
+* The tool-bar-almighty setting's value `my-custom-entries.js`
+* The content of the file:
+
 ```js
-// ~/.atom/my-custom-entries.js
 module.exports = [
   {
     type: 'button'
