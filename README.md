@@ -15,8 +15,8 @@ Available toolbar buttons:
 * __open git projects__ (requires `git-projects` package)
 * __list projects__ (requires `project-manager` package)
 * -
-* __split left__
-* __split right__
+* __split screen horizontally__
+* __split screen vertically__
 * -
 * __git merge conflicts__ (requires `merge-conflicts` package)
 * __toggle fullscreen__
