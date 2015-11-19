@@ -126,22 +126,6 @@ module.exports = [{
     icon: 'refresh'
     iconset: 'ion'
   },
-  [
-    {
-      type: 'button'
-      tooltip: 'Term3 Split Down'
-      dependency: 'term3'
-      callback: 'term3:open-split-down'
-      icon: 'terminal'
-    },
-    {
-      type: 'button'
-      tooltip: 'Term2 Split Down'
-      dependency: 'term2'
-      callback: 'term2:open-split-down'
-      icon: 'terminal'
-    }
-  ],
   {
     type: 'button'
     tooltip: 'Toggle Developer Tools'
