@@ -68,17 +68,17 @@ The `lib/entries.coffee` is another example on how to format your entries.
 ```js
 module.exports = [
   {
-    type: 'button'
-    tooltip: 'Open File'
-    callback: 'application:open-file'
-    icon: 'document-text'
+    type: 'button',
+    tooltip: 'Open File',
+    callback: 'application:open-file',
+    icon: 'document-text',
     iconset: 'ion'
   },
   {
-    type: 'button'
-    tooltip: 'Open Folder'
-    callback: 'application:open-folder'
-    icon: 'folder'
+    type: 'button',
+    tooltip: 'Open Folder',
+    callback: 'application:open-folder',
+    icon: 'folder',
     iconset: 'ion'
   }
 ]
