@@ -1,4 +1,5 @@
-module.exports = [{
+module.exports = [
+  {
     type: 'button'
     tooltip: 'Open File'
     callback: 'application:open-file'
