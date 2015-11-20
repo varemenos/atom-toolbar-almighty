@@ -5,8 +5,9 @@ path = require 'path';
 utils.getCustomEntries = (filepath) ->
   if filepath
     try
-      content = require(path.join(atom.getConfigDirPath(), filepath), 'utf-8')
+      content = require(path.join(atom.getConfigDirPath(), filepath))
     catch error
+      console.error error
       return false
     return content
   else
