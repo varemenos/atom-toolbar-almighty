@@ -8,29 +8,28 @@ An tool-bar plugin that adds many commonly used actions in the tool-bar.
 
 Available toolbar buttons:
 
-* __open file__
-* __open folder__
-* __save file__
-* __open git-control__ (missing from the screenshot) (requires `git-control` package)
-* __open git projects__ (requires `git-projects` package)
-* __list projects__ (requires `project-manager` package)
+* open file
+* open folder
+* save file
+* open git-control _(missing from the screenshot) (requires `git-control` package)_
+* open git projects _(requires `git-projects` package)_
+* list projects _(requires `project-manager` package)_
 * -
-* __split screen horizontally__
-* __split screen vertically__
+* split screen horizontally
+* split screen vertically
 * -
-* __git merge conflicts__ (requires `merge-conflicts` package)
-* __toggle fullscreen__
-* __toggle tree-view__
-* __toggle minimap__ (requires `minimap` package)
+* git merge conflicts _(requires `merge-conflicts` package)_
+* toggle fullscreen
+* toggle tree-view
+* toggle minimap _(requires `minimap` package)_
 * -
-* __auto indent__
-* __fold all__
-* __unfold all__
+* auto indent
+* fold all
+* unfold all
 * -
-* __reload window__
-* __opens a terminal (split bottom)__  (requires `term2` or `term3` package)
-* __toggle devtools__
-* __settings__
+* reload window
+* toggle devtools
+* settings
 
 __Note__: The toolbar buttons that require other packages will only appear if you have those packages installed
 
@@ -47,6 +46,11 @@ Then you install the `tool-bar-almighty` package:
 ```bash
 apm install tool-bar-almighty
 ```
+
+## Options
+
+You have the ability to include [custom entries](https://github.com/varemenos/atom-toolbar-almighty#custom-entries).
+You also have the ability to load the [suggested defaults](https://github.com/varemenos/atom-toolbar-almighty#description) along side your custom entries, or only the custom entries.
 
 ## Custom entries
 
