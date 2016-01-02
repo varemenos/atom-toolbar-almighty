@@ -50,7 +50,7 @@ apm install tool-bar-almighty
 ## Options
 
 You have the ability to include [custom entries](https://github.com/varemenos/atom-toolbar-almighty#custom-entries).
-You also have the ability to load the [suggested defaults](https://github.com/varemenos/atom-toolbar-almighty#description) along side your custom entries, or only the custom entries.
+You also have the ability to load the [suggested defaults](https://github.com/varemenos/atom-toolbar-almighty#toolbar-entries) along side your custom entries, or only the custom entries.
 
 ## Custom entries
 
