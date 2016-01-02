@@ -96,6 +96,10 @@ module.exports = [
 ]
 ```
 
+## Known Issues / FAQ
+
+* We've decided to remove the term2/term3 entries from the default entries, for more details and a possible fix read [this](https://github.com/varemenos/atom-toolbar-almighty/issues/9) issue's thread.
+
 ## License
 
 The MIT License
