@@ -13,7 +13,7 @@ toolBarAlmighty.config =
     default: ''
   override:
     title: 'Override default entries'
-    description: 'If checked, default `entries.coffee` buttons are replaced with the settings above\n, otherwise the default settings is extended with the file above.'
+    description: 'If checked, default `entries.coffee` buttons are replaced with the settings above, otherwise the default settings is extended with the file above.'
     type: 'boolean'
     default: false
 
