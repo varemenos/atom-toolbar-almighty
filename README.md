@@ -1,6 +1,6 @@
 Toolbar Almighty - a tool-bar plugin
 
-> An tool-bar plugin that adds many commonly used actions in the tool-bar.
+> A tool-bar plugin that adds many commonly used actions in the tool-bar.
 
 ## Toolbar entries
 
