@@ -57,7 +57,7 @@ module.exports = [
     type: 'button'
     tooltip: 'Split screen - Vertically'
     callback: 'pane:split-down'
-    icon: 'columns fa-rotate-270'
+    icon: 'fa-rotate-270'
     iconset: 'fa'
   },
   {
