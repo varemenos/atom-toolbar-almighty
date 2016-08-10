@@ -50,15 +50,15 @@ module.exports = [
     type: 'button'
     tooltip: 'Split screen - Horizontally'
     callback: 'pane:split-right'
-    icon: 'columns'
-    iconset: 'fa'
+    icon: 'format-horizontal-align-center'
+    iconset: 'mdi'
   },
   {
     type: 'button'
     tooltip: 'Split screen - Vertically'
     callback: 'pane:split-down'
-    icon: 'columns fa-rotate-270'
-    iconset: 'fa'
+    icon: 'format-vertical-align-center'
+    iconset: 'mdi'
   },
   {
     type: 'spacer'
