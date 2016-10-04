@@ -1,9 +1,8 @@
 path = require 'path'
 utils = require './utils'
-entries = require './entries'
 pkg = require '../package.json'
 
-toolBarAlmighty = {};
+toolBarAlmighty = {}
 
 toolBarAlmighty.config =
   custom:
@@ -23,14 +22,12 @@ toolBarAlmighty.deactivate = ->
 
 toolBarAlmighty.consumeToolBar = (toolBar) ->
   @toolBar = toolBar 'tool-bar-almighty'
+  utils.populate(@toolBar)
 
-  customEntries = utils.getCustomEntries(atom.config.get(pkg.name + '.custom'))
-  overrideDefault = atom.config.get(pkg.name + '.override')
+  atom.config.observe pkg.name + '.override', (newVal) ->
+    utils.populate(toolBarAlmighty.toolBar)
 
-  if customEntries
-    entries = if overrideDefault then customEntries else entries.concat(customEntries)
+  atom.config.observe pkg.name + '.custom', (newVal) ->
+    utils.populate(toolBarAlmighty.toolBar)
 
-  for entry in entries
-    utils.parseEntry(@toolBar, entry)
-
-module.exports = toolBarAlmighty;
+module.exports = toolBarAlmighty

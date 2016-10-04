@@ -1,11 +1,15 @@
-utils = {};
+utils = {}
 
-path = require 'path';
+path = require 'path'
+entries = require './entries'
+pkg = require '../package.json'
+fs = require('fs')
 
 utils.getCustomEntries = (filepath) ->
   if filepath
     try
-      content = require(path.join(atom.getConfigDirPath(), filepath))
+      thePath = path.join(atom.getConfigDirPath(), filepath)
+      content = fs.readFileSync(thePath, 'utf8')
     catch error
       console.error error
       return false
@@ -26,11 +30,25 @@ utils.addSpacer = (toolBar) ->
 utils.parseEntry = (toolBar, entry) ->
   if entry.type == 'button'
     if !entry.dependency
-      utils.addButton(toolBar, entry)
+      @addButton(toolBar, entry)
     else
       if atom.packages.loadedPackages[entry.dependency]
-        utils.addButton(toolBar, entry)
+        @addButton(toolBar, entry)
   else if entry.type == 'spacer'
-    utils.addSpacer(toolBar)
+    @addSpacer(toolBar)
 
-module.exports = utils;
+utils.populate = (toolBar) ->
+  toolBar?.removeItems()
+
+  customEntries = @getCustomEntries(atom.config.get(pkg.name + '.custom'))
+  overrideDefault = atom.config.get(pkg.name + '.override')
+
+  finalizedEntries = entries.filter((f) -> true) # clone
+
+  if customEntries
+    finalizedEntries = if overrideDefault then customEntries else finalizedEntries.concat(customEntries)
+
+  for entry in finalizedEntries
+    @parseEntry(toolBar, entry)
+
+module.exports = utils
