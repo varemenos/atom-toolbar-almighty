@@ -9,7 +9,7 @@ utils.getCustomEntries = (filepath) ->
   if filepath
     try
       thePath = path.join(atom.getConfigDirPath(), filepath)
-      content = fs.readFileSync(thePath, 'utf8')
+      content = JSON.parse fs.readFileSync(thePath, 'utf8')
     catch error
       console.error error
       return false
