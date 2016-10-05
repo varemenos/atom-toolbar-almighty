@@ -49,8 +49,8 @@ apm install tool-bar-almighty
 
 ## Options
 
-You have the ability to include [custom entries](https://github.com/varemenos/atom-toolbar-almighty#custom-entries).
-You also have the ability to load the [suggested defaults](https://github.com/varemenos/atom-toolbar-almighty#toolbar-entries) along side your custom entries, or only the custom entries.
+1. You have the ability to include [custom entries](https://github.com/varemenos/atom-toolbar-almighty#custom-entries).
+2. You also have the ability to load the [suggested defaults](https://github.com/varemenos/atom-toolbar-almighty#toolbar-entries) along side your custom entries, or only the custom entries.
 
 ## Custom entries
 
@@ -62,8 +62,8 @@ The file must be in JSON format that contains an Array of entries.
 
 The format is based on [tool-bar's](https://github.com/suda/tool-bar#example) but include 2 extra properties.
 
-1) `type` indicates whether the entry is a `button` or a `spacer`
-2) `dependency` indicates whether a button's package is not installed by default in Atom and should only be displayed if it's package is installed.
+1. `type` indicates whether the entry is a `button` or a `spacer`
+2. `dependency` indicates whether a button's package is not installed by default in Atom and should only be displayed if it's package is installed.
 
 ### Example
 
