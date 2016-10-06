@@ -104,7 +104,7 @@ The format is based on [tool-bar's](https://github.com/suda/tool-bar#example) bu
 ## Known Issues / FAQ
 
 * We've decided to remove the term2/term3 entries from the default entries, for more details and a possible fix read [this](https://github.com/varemenos/atom-toolbar-almighty/issues/9) issue's thread.
-* We've decided to only support JSON support for the custom entries due to issues related to content caching, you can read more in the follow issues' threads: [1](https://github.com/varemenos/atom-toolbar-almighty/issues/20), [2](https://github.com/varemenos/atom-toolbar-almighty/issues/13).
+* We've decided to only support the JSON format for the custom entries to prevent future formating issues.
 
 ## License
 
