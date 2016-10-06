@@ -1,10 +1,10 @@
 Toolbar Almighty - a tool-bar plugin
 
+![screenshot](https://rawgit.com/varemenos/atom-toolbar-almighty/master/screenshot.png)
+
 > A tool-bar plugin that adds many commonly used actions in the tool-bar.
 
 ## Toolbar entries
-
-![screenshot](https://rawgit.com/varemenos/atom-toolbar-almighty/master/screenshot.png)
 
 Available toolbar buttons:
 
