@@ -1,8 +1,8 @@
-Toolbar Almighty - a tool-bar plugin
+Toolbar Almighty - the only toolbar you need
 
 ![screenshot](https://rawgit.com/varemenos/atom-toolbar-almighty/master/screenshot.png)
 
-> A tool-bar plugin that adds many commonly used actions in the tool-bar.
+> This is a toolbar that provides many commonly used actions utilizing the tool-bar API.
 
 ## Toolbar entries
 
