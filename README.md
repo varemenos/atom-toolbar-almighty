@@ -1,8 +1,8 @@
-Toolbar Almighty - the only toolbar you need
+> This is a toolbar that provides many commonly used actions utilizing the tool-bar API.
+
+![https://img.shields.io/apm/dm/tool-bar-almighty.svg](https://img.shields.io/apm/dm/tool-bar-almighty.svg)
 
 ![screenshot](https://rawgit.com/varemenos/atom-toolbar-almighty/master/screenshot.png)
-
-> This is a toolbar that provides many commonly used actions utilizing the tool-bar API.
 
 ## Toolbar entries
 
