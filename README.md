@@ -49,49 +49,54 @@ apm install tool-bar-almighty
 
 ## Options
 
-You have the ability to include [custom entries](https://github.com/varemenos/atom-toolbar-almighty#custom-entries).
-You also have the ability to load the [suggested defaults](https://github.com/varemenos/atom-toolbar-almighty#toolbar-entries) along side your custom entries, or only the custom entries.
+1. You have the ability to include [custom entries](https://github.com/varemenos/atom-toolbar-almighty#custom-entries).
+2. You also have the ability to load the [suggested defaults](https://github.com/varemenos/atom-toolbar-almighty#toolbar-entries) along side your custom entries, or only the custom entries.
 
 ## Custom entries
 
-I've added basic support for custom entries in v0.4. To utilize this feature you have to go to the settings of tool-bar-almighty and enter a path relative to your `.atom` directory that contains the entries you want to add. They will be added below the default entries.
+You have the ability to include custom entries in the tool-bar-almighty by enabling the option in the package settings and entering a path relative to your `.atom` directory (that contains the entries you want to add).
 
-The file must be a javascript module that exports an Array of entries.
+The file must be in JSON format that contains an Array of entries.
 
 ### Format
 
-The format is the same as [tool-bar's](https://github.com/suda/tool-bar#example) with 2 extra properties. The first one is `type` which indicates whether the entry is a `button` or a `spacer` while the second one is `dependency` which indicates whether a button's package is not installed by default in Atom and should only be displayed if it's package is installed.
-The `lib/entries.coffee` is another example on how to format your entries.
+The format is based on [tool-bar's](https://github.com/suda/tool-bar#example) but include 2 extra properties.
+
+1. `type` indicates whether the entry is a `button` or a `spacer`
+2. `dependency` indicates whether a button's package is not installed by default in Atom and should only be displayed if it's package is installed.
 
 ### Example
 
-* The file's location `~/.atom/custom_entries.js`
-* The tool-bar-almighty setting's value must match the filename mentioned above `custom_entries.js`
+* Create a file inside `.atom`'s directory, in this case `~/.atom/custom_entries.json`
+* The tool-bar-almighty setting's value must match the filename mentioned above `custom_entries.json` (relative to the `.atom` directory)
 * The content of the file should look like the following:
 
-```js
-module.exports = [
+```json
+[
   {
-    type: 'button',
-    tooltip: 'Open File',
-    callback: 'application:open-file',
-    icon: 'document-text',
-    iconset: 'ion'
+    "type": "button",
+    "tooltip": "Open File",
+    "callback": "application:open-file",
+    "icon": "document-text",
+    "iconset": "ion"
   },
   {
-    type: 'button',
-    tooltip: 'Open Folder',
-    callback: 'application:open-folder',
-    icon: 'folder',
-    iconset: 'ion'
+    "type": "spacer"
   },
   {
-    type: 'button',
-    tooltip: 'Merge Conflicts',
-    dependency: 'merge-conflicts',
-    callback: 'merge-conflicts:detect',
-    icon: 'code-fork',
-    iconset: 'fa'
+    "type": "button",
+    "tooltip": "Open Folder",
+    "callback": "application:open-folder",
+    "icon": "folder",
+    "iconset": "ion"
+  },
+  {
+    "type": "button",
+    "tooltip": "Merge Conflicts",
+    "dependency": "merge-conflicts",
+    "callback": "merge-conflicts:detect",
+    "icon": "code-fork",
+    "iconset": "fa"
   }
 ]
 ```
@@ -99,6 +104,7 @@ module.exports = [
 ## Known Issues / FAQ
 
 * We've decided to remove the term2/term3 entries from the default entries, for more details and a possible fix read [this](https://github.com/varemenos/atom-toolbar-almighty/issues/9) issue's thread.
+* We've decided to only support the JSON format for the custom entries to prevent future formating issues.
 
 ## License
 
