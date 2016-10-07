@@ -1,6 +1,7 @@
 > Toolbar Almighty - the only toolbar you need
 
-![https://atom.io/packages/tool-bar-almighty](https://img.shields.io/apm/dm/tool-bar-almighty.svg)
+![https://img.shields.io/apm/v/tool-bar-almighty.svg](https://img.shields.io/apm/v/tool-bar-almighty.svg)
+![https://img.shields.io/apm/dm/tool-bar-almighty.svg](https://img.shields.io/apm/dm/tool-bar-almighty.svg)
 
 This is a toolbar that provides many commonly used actions utilizing the tool-bar API.
 
