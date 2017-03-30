@@ -11,6 +11,7 @@ This is a toolbar that provides many commonly used actions utilizing the tool-ba
 
 Available toolbar buttons:
 
+* new file
 * open file
 * open folder
 * save file
