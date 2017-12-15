@@ -1,9 +1,9 @@
 module.exports = [
   {
-    type: 'button',
-    tooltip: 'New File',
-    callback: 'application:new-file',
-    icon: 'plus',
+    type: 'button'
+    tooltip: 'New File'
+    callback: 'application:new-file'
+    icon: 'plus'
     iconset: 'ion'
   },    
   {
