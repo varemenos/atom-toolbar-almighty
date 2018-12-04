@@ -114,14 +114,14 @@ module.exports = [
     type: 'button'
     tooltip: 'Fold all'
     callback: 'editor:fold-all'
-    icon: 'level-up'
+    icon: 'level-up-alt'
     iconset: 'fa'
   },
   {
     type: 'button'
     tooltip: 'Unfold all'
     callback: 'editor:unfold-all'
-    icon: 'level-down'
+    icon: 'level-down-alt'
     iconset: 'fa'
   },
   {
